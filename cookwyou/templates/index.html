@@ -1,0 +1,802 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang='es' style='height: 100%;'>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cooking with you</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link href="{% static 'css/materialize.min.css' %}" rel="stylesheet">
+  <script src="{% static 'js/materialize.min.js' %}"></script>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+  <link href="{% static 'fonts/font-awesome/css/font-awesome.css' %}" rel="stylesheet">
+  <link href="{% static 'css/style.css' %}" rel="stylesheet">
+  <link href="{% static 'css/nivo-lightbox/nivo-lightbox.css' %}" rel="stylesheet">
+  <link href="{% static 'css/nivo-lightbox/default.css' %}" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Dancing+Script:400,700" rel="stylesheet">
+</head>
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+  <nav id="menu" class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+          data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span> <span
+            class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+        <a class="navbar-brand page-scroll" href="#page-top">Cooking with you</a> <i
+          class="medium material-icons">local_dining</i></div>
+
+
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#about" class="page-scroll">Nosotros</a></li>
+          <li><a href="#restaurant-menu" class="page-scroll">Antes de cocinar</a></li>
+          <li><a href="#portfolio" class="page-scroll">Recetas</a></li>
+          <li><a href="#restaurant-menu1" class="page-scroll">Mientras cocinas</a></li>
+          <li><a href="#team" class="page-scroll">Integrantes</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <header id="header">
+    <div class="intro">
+      <div class="overlay">
+        <div class="container">
+          <div class="row">
+            <div class="intro-text">
+              <h1>Cooking with you</h1>
+              <p>Fácil, rápido y para todos los gustos</p>
+              <a href="#about" class="btn btn-custom btn-lg page-scroll">Proyecto</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div id="about">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-md-6 ">
+          <div class="about-img"><img src="{% static 'img/introproyecto.jpeg' %}" class="img-responsive" alt=""></div>
+        </div>
+        <div class="col-xs-12 col-md-6">
+          <div class="about-text">
+            <h2>Nuestro proyecto</h2>
+            <p>Alumnos de la UAI 2020, TEI Seccion 2, interesados por una mejora en la cocina de los propios miembros de
+              la institución</p>
+            <h3>Objetivo</h3>
+            <p>Nuestro objetivo principal es ayudar a todas las personas que no tengan conocimientos en la cocina,
+              proporcionandoles un manual virtual con todos los pasos a seguir para lograr exquisitos platos de comida.
+            </p>
+            <p>Buscamos: </p>
+            <li type="square">Optimizar <i class="small material-icons">access_time</i></li>
+            <p></p>
+            <li type="square">Facilitar <i class="small material-icons">check</i></li>
+            <p></p>
+            <li type="square">Informar <i class="small material-icons"> info_outline </i></li>
+            <p></p>
+            <li type="square">Incentivar <i class="small material-icons">insert_emoticon</i></li>
+            <p>El arte culinario dentro de la comunidad, con tal de entusiasmar al cliente y proporcionarle una
+              experiencia agradable. </p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="restaurant-menu">
+    <div class="section-title text-center center">
+      <div class="overlay">
+        <h2>Antes de cocinar</h2>
+        <hr>
+        <p><big>Verifica cumplir con las siguientes instrucciones antes de poner manos a la obra</big></p>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-md-2">
+          <p>
+            <label>
+              <input type="checkbox">
+              <span><big>Tener la cocina limpia y ordenada</big></span>
+            </label>
+          </p>
+          <p>
+            <label>
+              <input type="checkbox">
+              <span><big>Verificar que tengas todos los ingredientes e implementos</big></span>
+            </label>
+          </p>
+        </div>
+        <div class="col-xs-12 col-md-2 ">
+          <p>
+            <label>
+              <input type="checkbox">
+              <span><big>Verificar la fecha de vencimiento de los ingredientes</big></span>
+            </label>
+          </p>
+          <p>
+            <label>
+              <input type="checkbox">
+              <span>
+                <big>Lavar bien los alimentos</big>
+              </span>
+            </label>
+          </p>
+        </div>
+        <div class="col-xs-12 col-md-2 ">
+          <p>
+            <label>
+              <input type="checkbox">
+              <span><big>Lavarse las manos</big></span>
+            </label>
+          </p>
+          <p>
+            <label>
+              <input type="checkbox">
+              <span><big>Tener los implementos limpios</big></span>
+            </label>
+          </p>
+        </div>
+        <div class="col-xs-12 col-md-2 ">
+          <p>
+            <label>
+              <input type="checkbox">
+              <span><big>Tener un basurero cerca</big></span>
+            </label>
+          </p>
+          <p>
+            <label>
+              <input type="checkbox">
+              <span><big>Sacar la comida congelada al ambiente</big></span>
+            </label>
+          </p>
+        </div>
+        <div class="col-xs-12 col-md-2 ">
+          <p>
+            <label>
+              <input type="checkbox">
+              <span><big>Calcular las porciones de ingredientes que usarás</big></span>
+            </label>
+          </p>
+          <p>
+            <label>
+              <input type="checkbox">
+              <span><big>Luz apropiada</big></span>
+            </label>
+          </p>
+        </div>
+        <div class="col-xs-12 col-md-2 ">
+          <p>
+            <label>
+              <input type="checkbox">
+              <span><big>Usar un delantal de cocina</big></span>
+            </label>
+          </p>
+          <p>
+            <label>
+              <input type="checkbox">
+              <span><big>Tener el cabello tomado o con una gorra de cocina</big></span>
+            </label>
+          </p>
+        </div>
+      </div>
+      <div class="row">
+      </div>
+    </div>
+  </div>
+  <div id="portfolio">
+    <div class="section-title text-center center">
+      <div class="overlay">
+        <h2>Recetas</h2>
+        <hr>
+        <p>Diseñado para una busqueda rápida y sencilla</p>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="categories">
+          <ul class="cat">
+            <li>
+              <ol class="type">
+                <li><a href="#" data-filter="*" class="active">Todas</a></li>
+                <li><a href="#" data-filter=".vege">Vegetarianas</a></li>
+                <li><a href="#" data-filter=".vegan">Veganas</a></li>
+              </ol>
+            </li>
+          </ul>
+          <div class="clearfix"></div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="portfolio-items">
+          <div class="col-sm-6 col-md-4 col-lg-4 vege">
+            <div class="portfolio-item">
+              <div class="card">
+                <div class="card-image">
+                  <img src="{% static 'img/portfolio/02-large.jpg' %}">
+                  <span class="card-title" style="background: rgba(0, 0, 0, 0.5);"><strong>Queque fácil de
+                      plátano-nuez</strong></span>
+                </div>
+                <div class="card-content">
+                  <p><u>Ingredientes</u>:</p>
+                  <ul>
+                    <li>- 3 unidades de plátano</li>
+                    <li>- 2 huevos</li>
+                    <li>- 1/3 taza de nueces</li>
+                    <li>- 1/4 taza de aceite de canola</li>
+                    <li>- 2 tazas de harina (la que tengas)</li>
+                    <li>- 1 cucharadita de polvos de hornear</li>
+                    <li>- 4 cucharadas de azúcar o 30 gotitas de stevia</li>
+                  </ul>
+                  <p><u>Instrucciones:</u></p>
+                  <ol>
+                    <li>1.-Pre calentar el horno. Con la ayuda de un tenedor moler el plátano.</li>
+                    <li>2.-En un recipiente mezclar el plátano molido con los huevos.</li>
+                    <li>3.-Batir bien, agregar el endulzante que vas a utilizar.</li>
+                    <li>4.-Picar las nueces.</li>
+                    <li>5.-En un recipiente mezclar todos los ingredientes, harina, nueces, aceite, polvos de hornear y
+                      la mezcla de plátano y huevos.</li>
+                    <li>6.-Agregar la mezcla en el molde y decorar con plátano picado y nueces enteras.</li>
+                    <li>7.-Hornear por 30 minutos entre 180° a 200°C. Dejar enfriar y disfrutar.</li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-4 vege">
+            <div class="portfolio-item">
+              <div class="card">
+                <div class="card-image">
+                  <img src="{% static 'img/portfolio/03-large.jpg' %}">
+                  <span class="card-title" style="background: rgba(0, 0, 0, 0.5);"><strong>Nuggets
+                      vegetarianos</strong></span>
+                </div>
+                <div class="card-content">
+                  <p><u>Ingredientes</u>:</p>
+                  <ul>
+                    <li>- 1 unidad zanahoria grande</li>
+                    <li>- ¼ unidad pimentón verde</li>
+                    <li>- ¼ cebolla </li>
+                    <li>- 1 unidad de huevo</li>
+                    <li>- ½ media taza de harina (la que tengas)</li>
+                    <li>- ½ cucharadita de sal</li>
+                    <li>- ½ cucharadita de cúrcuma</li>
+                    <li>- 1 cucharadita de aceite de oliva</li>
+                  </ul>
+                  <p><u>Instrucciones:</u></p>
+                  <ol>
+                    <li>1.-pelar la zanahoria y la cebolla. Cortar el pimentón y lavarlo.</li>
+                    <li>2.-En la procesadora poner todas las verduras. Procesar hasta que esté todo bien molido.</li>
+                    <li>3.-Poner la mezcla de verduras en un colador y apretar con las manos para botar lo máximo de
+                      agua posible.</li>
+                    <li>4.-En un recipiente poner la mezcla de verduras agregar el huevo, sal, cúrcuma, y pimienta. No
+                      agregar mucho de estas dos especies si es para niños, quedara muy picante. Mezclar bien.</li>
+                    <li>5.-Poner la harina en un plato hondo. Calentar la cucharadita de aceite en un sartén.</li>
+                    <li>6.-Hacer los Nuggets con las manos. Ustedes ven la forma que le quieran dar.</li>
+                    <li>7.-Pasar cada nugget por la harina</li>
+                    <li>8.- Ponerlas en el sartén. Cocinar unos 4 minutos por lado. La idea es que no se desarmen.
+                      Cambiarlas de lado con cuidado.</li>
+                    <li>9.- Una vez listas pueden consumirlas con lo que quieran, con una rica ensalada, o como picoteo.
+                    </li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-4 vege">
+            <div class="portfolio-item">
+              <div class="card">
+                <div class="card-image">
+                  <img src="{% static 'img/portfolio/04-large.jpg' %}">
+                  <span class="card-title" style="background: rgba(0, 0, 0, 0.5);"><strong>Pasta
+                      vegetariana</strong></span>
+                </div>
+                <div class="card-content">
+                  <p><u>Ingredientes</u>:</p>
+                  <ul>
+                    <li>- 1 cebolla chica rallada</li>
+                    <li>- 2 dientes de ajo molidos</li>
+                    <li>- ½ pimentón verde en cuadraditos</li>
+                    <li>- 1 zanahoria mediana rallada</li>
+                    <li>- 1/4 de zapallo italiano rallado</li>
+                    <li>- 5 tomates maduros cortados en cuadraditos</li>
+                    <li>- 4/5 de taza de salsa de tomate</li>
+                    <li>- 1 pisca de azúcar</li>
+                    <li>- 1 taza de proteína vegetal</li>
+                    <li>- 1 caluga de caldo de verduras</li>
+                    <li>- Sal, pimienta, orégano, comino y ají de color a gusto</li>
+                  </ul>
+                  <p><u>Instrucciones:</u></p>
+                  <ol>
+                    <li>1.-Se fríe en aceite la cebolla y ajo y se agregan los aliños y se deja hasta que la cebolla
+                      este tierna. Mientras tanto se deshace el caldo de verduras en la proteína de soya seca y se
+                      agrega agua hirviendo hasta apenas cubrirla, se revuelve se deja reposar.</li>
+                    <li>2.-Una vez que la cebolla esta tierna se agrega el pimentón y zanahoria y se revuelve. Se deja
+                      reposar unos 5 minutos a fuego lento, revolviendo para que no se queme y luego se agrega el tomate
+                      y zapallo italiano, se deja por unos 3 minutos, se verifica sazón y se agrega la proteína de soya,
+                      la salsa de tomate y el azúcar.</li>
+                    <li>3.-Se revuelve bien y se baja a fuego medio-bajo, revolviendo de vez en cuando y se deja por
+                      unos 45 minutos. Mientras más hierva, más se le quitara la acidez a la salsa.</li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-4 vege">
+            <div class="portfolio-item">
+              <div class="card">
+                <div class="card-image">
+                  <img src="{% static 'img/portfolio/05-large.jpg' %}">
+                  <span class="card-title" style="background: rgba(0, 0, 0, 0.5);"><strong>Crema de
+                      zanahoria</strong></span>
+                </div>
+                <div class="card-content">
+                  <p><u>Ingredientes</u>:</p>
+                  <ul>
+                    <li>- 1 cebolla grande</li>
+                    <li>- 1 zanahoria mediana</li>
+                    <li>- Caldo de verduras o de zanahoria</li>
+                    <li>- Nata liquida para cocinar </li>
+                    <li>- Sal y pimienta a gusto</li>
+                    <li>- Aceite de oliva</li>
+                  </ul>
+                  <p><u>Instrucciones:</u></p>
+                  <ol>
+                    <li>1.-Pelar y cortar la cebolla. Calentar un poco el aceite de oliva en una cacerola para poner la
+                      cebolla, a fuego medio, durante 5 minutos.</li>
+                    <li>2.-pelar y cortar la cebolla. Calentar un poco el aceite de oliva en una cacerola para poner la
+                      cebolla, a fuego medio, durante 5 minutos.</li>
+                    <li>3.-Se agrega la zanahoria a la cacerola, deben remover constantemente un par de minutos.</li>
+                    <li>4.-Le agregan el caldo, la sal y deben esperar a que llegue a punto de ebullición.</li>
+                    <li>5.-Lo dejan a fuego medio durante 15 minuto o hasta que la zanahoria este blanda.</li>
+                    <li>6.-Finalmente lo deben triturar para después añadir la nata liquida.</li>
+                    <li>7.-Mezclar y servir. </li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-4 vegan">
+            <div class="portfolio-item">
+              <div class="card">
+                <div class="card-image">
+                  <img src="{% static 'img/portfolio/01-large.jpg' %}">
+                  <span class="card-title" style="background: rgba(0, 0, 0, 0.5);"><strong>Mousse Vegetal de
+                      Chocolate</strong></span>
+                </div>
+                <div class="card-content">
+                  <p><u>Ingredientes</u>:</p>
+                  <ul>
+                    <li>- 1 frasco de yogurt</li>
+                    <li>- 3 cucharadas de cacao amargo</li>
+                    <li>- 1 cucharada de frambuesas</li>
+                    <li>- 2 cucharadas de coco rallado</li>
+                    <li>- 10 unidades de almendras</li>
+                    <li>- 2 cucharaditas de azúcar o 10 gotitas de stevia</li>
+                  </ul>
+                  <p><u>Instrucciones:</u></p>
+                  <ol>
+                    <li>1.-en un plato mezclar el yogurt de soya, con el cacao en polvo, azúcar y una cucharada de coco.
+                    </li>
+                    <li>2.-Mezclar bien</li>
+                    <li>3.-Traspasarlo a un envase, ideal de vidrio para así llevarlo donde quieras. Poner la mezcla de
+                      yogurt y chocolate, poner las almendras, luego la otra cucharada de coco y por ultimo las
+                      frambuesas.</li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-4 vegan">
+            <div class="portfolio-item">
+              <div class="card">
+                <div class="card-image">
+                  <img src="{% static 'img/portfolio/06-large.jpg' %}">
+                  <span class="card-title" style="background: rgba(0, 0, 0, 0.5);"><strong>Hummus de cebolla
+                      caramelizada</strong></span>
+                </div>
+                <div class="card-content">
+                  <p><u>Ingredientes</u>:</p>
+                  <ul>
+                    <li>- 2 tazas de garbanzos</li>
+                    <li>- 1 Unidad Cebolla Morada grande</li>
+                    <li>- 1 cucharada Azúcar (o endulzante que prefieras) </li>
+                    <li>- 1 cucharada de tahini o aceite de sésamo (opcional)</li>
+                    <li>- ¼ taza de aceite de oliva</li>
+                    <li>- 1 cucharadita de comino</li>
+                    <li>- Sal y pimienta a gusto</li>
+                    <li>- Jugo de medio limón</li>
+                  </ul>
+                  <p><u>Instrucciones:</u></p>
+                  <ol>
+                    <li>1.-Picar la cebolla y saltearla con una cucharadita de aceite de oliva. Una vez que se comience
+                      a dorar agregar la cucharada de azúcar. Saltar hasta que este dorada</li>
+                    <li>2.-Agregar todos los ingredientes a la licuadora o procesadora. Incluyendo la cebolla
+                      caramelizada.</li>
+                    <li>3.-licuar hasta que quede un delicioso y cremoso puré. </li>
+                    <li>4.-Una vez servido agregar aceite de oliva y semillas de sésamo para decorar</li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-4 vegan">
+            <div class="portfolio-item">
+              <div class="card">
+                <div class="card-image">
+                  <img src="{% static 'img/portfolio/07-large.jpg' %}">
+                  <span class="card-title" style="background: rgba(0, 0, 0, 0.5);"><strong>Arroz</strong></span>
+                </div>
+                <div class="card-content">
+                  <p><u>Ingredientes</u>:</p>
+                  <ul>
+                    <li>- 400g de arroz</li>
+                    <li>- 2 dientes de ajo</li>
+                    <li>- Aceite</li>
+                    <li>- 1 hoja de laurel</li>
+                    <li>- Sal</li>
+                  </ul>
+                  <p><u>Instrucciones:</u></p>
+                  <ol>
+                    <li>1.-Ponga una olla a calentar a fuego suave con un pequeño chorrito de aceite. Añade los dientes
+                      de ajo picados y deja que se cocinen un par de minutos, que no cojan color.</li>
+                    <li>2.-Pasado este tiempo, añade el arroz. Sube la potencia del fuego y remueve durante un minuto
+                      más.</li>
+                    <li>3.-Hecho esto, añadimos la hoja de laurel, el doble de cantidad de agua (en este caso, 4 vasos)
+                      y una buena pizca de sal. </li>
+                    <li>4.-Dejamos que se cocina a temperatura media unos 15 o 20 minutos. Depende de la variedad de
+                      arroz. No dejes de vigilar por si necesita más agua. Es muy importante que durante este proceso no
+                      revuelvas nunca el arroz, para que quede más suelto.</li>
+                    <li>5.-Servimos como guarnición de otros platos o para la receta que desees.</li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-4 vegan">
+            <div class="portfolio-item">
+              <div class="card">
+                <div class="card-image">
+                  <img src="{% static 'img/portfolio/08-large.jpg' %}">
+                  <span class="card-title" style="background: rgba(0, 0, 0, 0.5);"><strong>Magdalenas de yogurt y
+                      chocolate</strong></span>
+                </div>
+                <div class="card-content">
+                  <p><u>Ingredientes</u>:</p>
+                  <ul>
+                    <li>- 195gr de harina (la que tú quieras y si quieren que sea más saludable pueden usar harina de
+                      avena integral)</li>
+                    <li>- 1 cucharadita de levadura en polvo</li>
+                    <li>- Fruta para decorar</li>
+                    <li>- 3 cdas soperas de vainilla liquida</li>
+                    <li>- 3 cdas soperas de sirope de agave</li>
+                    <li>- 250ml de yogurt vegetal</li>
+                    <li>- 250ml de leche vegetal</li>
+                    <li>- 1/3 taza de aceite de olvida</li>
+                    <li>- 1 taza de chispas de chocolate</li>
+                    <li>- 13 moldes para magdalenas</li>
+                  </ul>
+                  <p><u>Instrucciones:</u></p>
+                  <ol>
+                    <li>1.-En un bowl grande, mezclamos la harina con la cdita de levadura en polvo y el yogurt vegetal.
+                    </li>
+                    <li>2.-Añadimos a continuación el acetie de oliva y mezclamos.</li>
+                    <li>3.-Añadimos 200ml de leche vegetal, el sirope de agave y las chispas de chocolate. (guardar para
+                      decorar al final)</li>
+                    <li>4.-Mezclamos bien, hasta conseguir una mezcla cremosa y homogénea.</li>
+                    <li>5.-Añadimos otros 50 ml de leche vegetal, y volvemos a mezclar.</li>
+                    <li>6.-Añadimos la vainilla y precalentamos el horno a 180°C.</li>
+                    <li>7.-Llenamos lo smoldes de las magdalenas a 1/3 de su altura.</li>
+                    <li>8.-Colocamos unos trocitos de chocolate y cubrimos con masa, hasta llenar 2/3 de la altura del
+                      molde.</li>
+                    <li>9.-Horneamos por unos 30 minutos, hasta que se haya elevado. Para comprobar si el interior está
+                      seco, puedes pinchar con un palito pasados los 25 min de horneado.</li>
+                    <li>10.-Dejamos que se enfríen</li>
+                    <li>11.-Decorar con fruta</li>
+                    <li>12.-¡Y a disfrutar!</li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div-->
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="restaurant-menu">
+    <div id="restaurant-menu1"></div>
+    <div class="section-title text-center center">
+      <div class="overlay">
+        <h2>Mientras cocinas</h2>
+        <hr>
+        <p>Verifica cumplir con las siguientes instrucciones mientras estes cocinando</p>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-md-2">
+          <p>
+            <label>
+              <input type="checkbox">
+              <span><big>Procurar por una buena higuiene en todo momento</big></span>
+            </label>
+          </p>
+          <p>
+            <label>
+              <input type="checkbox">
+              <span><big>Probar la comida mientras la haces para ver si le falta algún ingrediente</big></span>
+            </label>
+          </p>
+        </div>
+        <div class="col-xs-12 col-md-2 ">
+          <p>
+            <label>
+              <input type="checkbox">
+              <span><big>Si estas cocinando ajo no lo hagas de los primeros, ya que se quema rápidamente</big></span>
+            </label>
+          </p>
+          <p>
+            <label>
+              <input type="checkbox">
+              <span>
+                <big>No colocar en exceso sal, ni aceite</big>
+              </span>
+            </label>
+          </p>
+        </div>
+        <div class="col-xs-12 col-md-2 ">
+          <p>
+            <label>
+              <input type="checkbox">
+              <span><big>Si estas horneando, no abras el horno antes de tiempo</big></span>
+            </label>
+          </p>
+          <p>
+            <label>
+              <input type="checkbox">
+              <span><big>Realiza el sofrito antes</big></span>
+            </label>
+          </p>
+        </div>
+        <div class="col-xs-12 col-md-2 ">
+          <p>
+            <label>
+              <input type="checkbox">
+              <span><big>Si harás fideos, espera a que el agua hierva antes de colocarlos en la olla</big></span>
+            </label>
+          </p>
+          <p>
+            <label>
+              <input type="checkbox">
+              <span><big>Cuando el agua hierva echale un poco de sal</big></span>
+            </label>
+          </p>
+        </div>
+        <div class="col-xs-12 col-md-2 ">
+          <p>
+            <label>
+              <input type="checkbox">
+              <span><big>Recuerda tapar las ollas</big></span>
+            </label>
+          </p>
+          <p>
+            <label>
+              <input type="checkbox">
+              <span><big>Manten los cuchillos afilados</big></span>
+            </label>
+          </p>
+        </div>
+        <div class="col-xs-12 col-md-2 ">
+          <p>
+            <label>
+              <input type="checkbox">
+              <span><big>Retira las semillas de las verduras</big></span>
+            </label>
+          </p>
+          <p>
+            <label>
+              <input type="checkbox">
+              <span><big>Para preparaciones grandes debes cocinarlas a un fuego bajo</big></span>
+            </label>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="contact" class="text-center">
+    <div class="container">
+      <div class="section-title text-center">
+        <h2>Mandanos tu receta preferida!</h2>
+        <hr>
+        <p>Si deseas agregar una receta nueva escribela aquí abajo</p>
+      </div>
+      <div class="col-md-10 col-md-offset-1">
+        <form method="POST">
+          {% csrf_token %}
+          <div class="row">
+            <div class="col-md-6">
+              <input name="nombre" id="nombre" class="form-control" placeholder="Nombre" required="required">
+              <p class="help-block text-danger"></p>
+            </div>
+            <div class="col-md-6">
+              <input name="mail" id="mail" class="form-control" placeholder="Mail" required="required">
+              <p class="help-block text-danger"></p>
+            </div>
+          </div>
+          <textarea name="mensaje" id="mensaje" class="form-control" rows="4" placeholder="Mensaje" required></textarea>
+          <p class="help-block text-danger"></p>
+          <button type="submit" name="action" class="btn btn-custom btn-lg" onclick="alerta()">Enviar</button>          
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div id="team" class="text-center">
+    <div class="overlay">
+      <div class="container">
+        <div class="col-md-10 col-md-offset-1 section-title">
+
+          <h2>Alumnos de la Universidad Adolfo Ibañez <i class="medium material-icons">people_outline</i></h2>
+          <hr>
+          <p>Cátedra de Ingeniería</p>
+        </div>
+        <div id="row">
+          <div class="col-md-4 team">
+            <div class="thumbnail">
+              <div class="team-img"><img src="{% static 'img/team/01.png' %}" alt="..."></div>
+              <div class="caption">
+                <h3>Lucas González</h3>
+                <p>22 años</p>
+              </div>
+            </div>
+            <div class="thumbnail">
+              <div class="team-img"><img src="{% static 'img/team/06.jpg' %}" alt="..."></div>
+              <div class="caption">
+                <h3>Agustín Abusleme</h3>
+                <p>21 años</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 team">
+            <div class="thumbnail">
+              <div class="team-img"><img src="{% static 'img/team/02.png' %}" alt="..."></div>
+              <div class="caption">
+                <h3>Hans Barnert</h3>
+                <p>18 años</p>
+              </div>
+            </div>
+            <div class="thumbnail">
+              <div class="team-img"><img src="{% static 'img/team/04.png' %}" alt="..."></div>
+              <div class="caption">
+                <h3>Renata Costa</h3>
+                <p>18 años</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 team">
+            <div class="thumbnail">
+              <div class="team-img"><img src="{% static 'img/team/03.png' %}" alt="..."></div>
+              <div class="caption">
+                <h3>Vanessa Venegas</h3>
+                <p>19 años</p>
+              </div>
+
+              <div class="thumbnail">
+                <div class="team-img"><img src="{% static 'img/team/05.png' %}" alt="..."></div>
+                <div class="caption">
+                  <h3>Nicholas Engelmann
+                  </h3>
+                  <p>19 años</p>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="footer">
+    <div class="container text-center">
+      <div class="col-md-4">
+        <h3>Ramo: Introducción a la Ingeniería</h3>
+        <div class="contact-item">
+          <p>Sección 2</p>
+          <p>Profesor: German Orrego</p>
+          <p>Ayudante: Italo Traverso</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <h3>Solución Ingenieril</h3>
+        <div class="contact-item">
+          <p>Mediante el uso de la tecnología de la información</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <h3>Primer proyecto</h3>
+        <div class="contact-item">
+          <p>Hecho por alumnos de la UAI Viña del Mar</p>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid text-center copyrights">
+      <div class="col-md-8 col-md-offset-2">
+        <p>&copy; 2020 Cooking with you. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="{% static 'js/jquery.1.11.1.js' %}"></script>
+  <script src="{% static 'js/bootstrap.js' %}"></script>
+  <script src="{% static 'js/SmoothScroll.js' %}"></script>
+  <script src="{% static 'js/nivo-lightbox.js' %}"></script>
+  <script src="{% static 'js/jquery.isotope.js' %}"></script>
+  <script src="{% static 'js/jqBootstrapValidation.js' %}"></script>
+  <script src="{% static 'js/contact_me.js' %}"></script>
+  <script src="{% static 'js/main.js' %}"></script>
+  <script>
+    filterSelection("all")
+    function filterSelection(c) {
+      var x, i;
+      x = document.getElementsByClassName("filterDiv");
+      if (c == "all") c = "";
+
+      for (i = 0; i < x.length; i++) {
+        w3RemoveClass(x[i], "show");
+        if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+      }
+    }
+
+
+    function w3AddClass(element, name) {
+      var i, arr1, arr2;
+      arr1 = element.className.split(" ");
+      arr2 = name.split(" ");
+      for (i = 0; i < arr2.length; i++) {
+        if (arr1.indexOf(arr2[i]) == -1) {
+          element.className += " " + arr2[i];
+        }
+      }
+    }
+
+
+    function w3RemoveClass(element, name) {
+      var i, arr1, arr2;
+      arr1 = element.className.split(" ");
+      arr2 = name.split(" ");
+      for (i = 0; i < arr2.length; i++) {
+        while (arr1.indexOf(arr2[i]) > -1) {
+          arr1.splice(arr1.indexOf(arr2[i]), 1);
+        }
+      }
+      element.className = arr1.join(" ");
+    }
+
+
+    //var btnContainer = document.getElementById("myBtnContainer");
+    //var btns = btnContainer.getElementsByClassName("btn");
+    //for (var i = 0; i < btns.length; i++) {
+      //btns[i].addEventListener("click", function () {
+        //var current = document.getElementsByClassName("active");
+        //current[0].className = current[0].className.replace(" active", "");
+        //this.className += " active";
+      //});
+    //}</script>
+  
+
+<script>
+function alerta() {
+  alert("Muchas gracias!, revisaremos tu pedido.");
+}
+</script>
+</body>
+
+</html>
